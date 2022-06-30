@@ -31,11 +31,13 @@
 
 <script>
 
+import STORED_API_KEY from './API_KEYS.txt'
+const api_key = STORED_API_KEY
 export default {
   name: 'App',
   data () {
     return{
-      api_key: '5584404227d4813b2686ddf2d14f53fd',
+      api_key,
       url_base: 'https://api.openweathermap.org/data/2.5/',
       query: '',
       weather: {}
